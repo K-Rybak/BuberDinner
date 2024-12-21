@@ -1,7 +1,5 @@
-﻿namespace Contracts.Authentication
-{ 
-    public record LoginRequest(
-        string Email,
-        string Password
-        );
-}
+﻿namespace Contracts.Authentication;
+
+public record LoginRequest(
+    string Email,
+    string Password);
