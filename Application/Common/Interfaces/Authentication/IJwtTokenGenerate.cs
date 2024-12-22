@@ -1,6 +1,8 @@
-﻿namespace Application.Common.Interfaces.Authentication;
+﻿using Domain.Entities;
+
+namespace Application.Common.Interfaces.Authentication;
 
 public interface IJwtTokenGenerate
 {
-    string GenerateToken(Guid id, string firstName, string lastName);
+    string GenerateToken(User user);
 }
